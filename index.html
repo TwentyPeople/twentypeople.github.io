@@ -36,9 +36,52 @@
         </div>
 
         <h1>
-<a name="welcome" class="anchor" href="#welcome"><span class="octicon octicon-link"></span></a>Welcome!</h1>
+<a name="our-products" class="anchor" href="#our-products"><span class="octicon octicon-link"></span></a>Our Products</h1>
 
-<p>Welcome to the TwentyPeople International distribution center.</p>
+<p>Welcome to the TwentyPeople International distribution center.
+You're probably looking for instructions on how to use our products, aren't you?
+Our actually distributed products worldwide are:</p>
+
+<ul>
+<li>
+<a href="https://github.com/TwentyPeople/jCurrency">jCurrency</a>, under the TPOL license.</li>
+</ul><h2>
+<a name="jcurrency" class="anchor" href="#jcurrency"><span class="octicon octicon-link"></span></a>jCurrency</h2>
+
+<p>jCurrency is a <strong>simple</strong> yet easily <strong>expandible</strong> currency converter, built with Java. It's made by an independent developer and under the authority of TwentyPeople Europe.
+To use it, clone the repository:</p>
+
+<pre><code>$ git pull https://github.com/TwentyPeople/jCurrency.git
+</code></pre>
+
+<p>And that's it! Now, you've the source under the <code>src/currency</code> directory. If you want to compile it, use this command:</p>
+
+<pre><code>$ javac src/currency/Currency.java
+</code></pre>
+
+<p>Note that you need the JDK &gt;= 1.6 in order to do this, and the JRE &gt;= 1.6 to run it.</p>
+
+<p>If you just want to run it, use:</p>
+
+<pre><code>$ java -jar Currency.jar &lt;number&gt; &lt;origin_currency&gt; &lt;converted_currency&gt;
+</code></pre>
+
+<p>The actual available currencies are specified in the readme file.</p>
+
+<p>If you want to do any modifications, fork our repository, pull it:</p>
+
+<pre><code>$ git remote add myfork https://github.com/myUsername/jCurrency.git
+$ git pull origin master
+</code></pre>
+
+<p>Do your changes, and then push it:</p>
+
+<pre><code>$ git add *
+$ git commit -m "Updating"
+$ git push origin master
+</code></pre>
+
+<p>And now, finally, send us a pull request. Remember that you can't share your modifications until we accept the pull request or we give you the permission to do it!</p>
       </section>
 
     </div>
